@@ -1,0 +1,27 @@
+.left{
+    width: 30%;
+    height: 850px;
+    border: 1px solid white;
+    background-color: #738EDF;
+    float: left;
+}
+.rightTop{
+    width: 69%;
+    height: 220px;
+    border: 1px solid white;
+    background-color: #738EDF;
+    float: left;
+}
+.rightMiddle{
+    width: 69%;
+    height: 630px;
+    border: 1px solid white;
+    float: left;
+}
+.topPanels{
+    margin-top: 80px;
+}
+.rightTopNume{
+    height: 100px;
+    line-height: 100px;
+}

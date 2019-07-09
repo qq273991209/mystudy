@@ -1,0 +1,264 @@
+2019-06-13 10:27:52,737 INFO (StartupInfoLogger.java:48)- Starting StudySpringAppApplication on DESKTOP-0TOJ20R with PID 2988 (F:\MyWork\StudySpringApp\target\classes started by dell in F:\MyWork\StudySpringApp)
+2019-06-13 10:27:52,737 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-13 10:27:52,737 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-06-13 10:27:53,858 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5b7ffa2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:27:53,936 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$39ac0100] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:27:53,967 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95143c01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:27:54,918 INFO (EmbeddedWebApplicationContext.java:287)- Root WebApplicationContext: initialization completed in 2150 ms
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/getUserInfo],methods=[GET]}" onto public com.java.util.ResponseData com.java.controller.LoginController.login()
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/login],methods=[POST]}" onto public com.java.util.ResponseData com.java.controller.LoginController.Login(java.lang.String)
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/wechatPublicPay],methods=[POST]}" onto public com.java.util.ResultMsg com.java.controller.LoginController.wechatPublicPay(com.java.entity.WechatPublicPayParam) throws java.lang.Exception
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/hi],methods=[POST]}" onto public java.lang.String com.java.controller.LoginController.sayHi()
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-13 10:27:55,887 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-13 10:27:56,164 INFO (RequestMappingHandlerAdapter.java:557)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28903b4: startup date [Thu Jun 13 10:27:52 CST 2019]; root of context hierarchy
+2019-06-13 10:27:56,211 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:27:56,211 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:27:56,242 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:27:56,554 INFO (FreeMarkerConfigurer.java:127)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-06-13 10:27:56,804 INFO (ServerEndpointExporter.java:143)- Registering @ServerEndpoint class: class com.java.config.WebSocketServer
+2019-06-13 10:27:56,851 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 2147483647
+2019-06-13 10:32:40,973 INFO (DefaultLifecycleProcessor.java:360)- Stopping beans in phase 2147483647
+2019-06-13 10:32:40,973 INFO (StartupInfoLogger.java:57)- Started StudySpringAppApplication in 288.471 seconds (JVM running for 292.077)
+2019-06-13 10:34:30,116 INFO (StartupInfoLogger.java:48)- Starting StudySpringAppApplication on DESKTOP-0TOJ20R with PID 10008 (F:\MyWork\StudySpringApp\target\classes started by dell in F:\MyWork\StudySpringApp)
+2019-06-13 10:34:30,116 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-13 10:34:30,116 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-06-13 10:34:31,105 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ec14066] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:34:31,145 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eced4737] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:34:31,191 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$48558238] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:34:31,609 INFO (EmbeddedWebApplicationContext.java:287)- Root WebApplicationContext: initialization completed in 1463 ms
+2019-06-13 10:34:32,438 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/wechatPublicPay],methods=[POST]}" onto public com.java.util.ResultMsg com.java.controller.LoginController.wechatPublicPay(com.java.entity.WechatPublicPayParam) throws java.lang.Exception
+2019-06-13 10:34:32,439 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/getUserInfo],methods=[GET]}" onto public com.java.util.ResponseData com.java.controller.LoginController.login()
+2019-06-13 10:34:32,439 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/hi],methods=[POST]}" onto public java.lang.String com.java.controller.LoginController.sayHi()
+2019-06-13 10:34:32,440 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/login],methods=[POST]}" onto public com.java.util.ResponseData com.java.controller.LoginController.Login(java.lang.String)
+2019-06-13 10:34:32,442 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-06-13 10:34:32,443 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-06-13 10:34:32,443 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-06-13 10:34:32,445 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-13 10:34:32,445 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-13 10:34:32,711 INFO (RequestMappingHandlerAdapter.java:557)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@431c1bb1: startup date [Thu Jun 13 10:34:30 CST 2019]; root of context hierarchy
+2019-06-13 10:34:32,751 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:34:32,751 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:34:32,780 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:34:33,070 INFO (FreeMarkerConfigurer.java:127)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-06-13 10:34:33,352 INFO (ServerEndpointExporter.java:143)- Registering @ServerEndpoint class: class com.java.config.WebSocketServer
+2019-06-13 10:34:33,389 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 2147483647
+2019-06-13 10:34:33,706 INFO (StartupInfoLogger.java:57)- Started StudySpringAppApplication in 3.779 seconds (JVM running for 4.371)
+2019-06-13 10:34:53,215 INFO (DefaultLifecycleProcessor.java:360)- Stopping beans in phase 2147483647
+2019-06-13 10:46:41,699 INFO (StartupInfoLogger.java:48)- Starting StudySpringAppApplication on DESKTOP-0TOJ20R with PID 5364 (F:\MyWork\StudySpringApp\target\classes started by dell in F:\MyWork\StudySpringApp)
+2019-06-13 10:46:41,699 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-13 10:46:41,700 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-06-13 10:46:42,941 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e49606e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:46:42,981 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c2c20db9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:46:43,026 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e2a48ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 10:46:43,441 INFO (EmbeddedWebApplicationContext.java:287)- Root WebApplicationContext: initialization completed in 1715 ms
+2019-06-13 10:46:44,272 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/hi],methods=[POST]}" onto public java.lang.String com.java.controller.LoginController.sayHi()
+2019-06-13 10:46:44,274 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/getUserInfo],methods=[GET]}" onto public com.java.util.ResponseData com.java.controller.LoginController.login()
+2019-06-13 10:46:44,275 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/wechatPublicPay],methods=[POST]}" onto public com.java.util.ResultMsg com.java.controller.LoginController.wechatPublicPay(com.java.entity.WechatPublicPayParam) throws java.lang.Exception
+2019-06-13 10:46:44,275 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/login],methods=[POST]}" onto public com.java.util.ResponseData com.java.controller.LoginController.Login(java.lang.String)
+2019-06-13 10:46:44,278 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-06-13 10:46:44,279 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-06-13 10:46:44,279 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-06-13 10:46:44,281 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-13 10:46:44,281 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-13 10:46:44,545 INFO (RequestMappingHandlerAdapter.java:557)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c73efdf: startup date [Thu Jun 13 10:46:41 CST 2019]; root of context hierarchy
+2019-06-13 10:46:44,584 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:46:44,584 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:46:44,613 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 10:46:44,852 INFO (FreeMarkerConfigurer.java:127)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-06-13 10:46:45,096 INFO (ServerEndpointExporter.java:143)- Registering @ServerEndpoint class: class com.java.config.WebSocketServer
+2019-06-13 10:46:45,129 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 2147483647
+2019-06-13 10:46:45,376 INFO (StartupInfoLogger.java:57)- Started StudySpringAppApplication in 3.884 seconds (JVM running for 4.536)
+2019-06-13 10:48:51,496 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-13 10:48:51,510 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-06-13 10:50:25,325 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 10:50:25,325 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 10:50:42,473 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 10:50:42,521 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 10:50:42,522 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 10:51:10,526 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 10:51:10,562 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 10:51:10,562 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 10:52:20,006 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 10:52:20,930 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 10:52:20,930 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 10:54:34,478 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 10:54:36,135 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 10:54:36,136 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 10:55:06,438 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 10:55:58,694 INFO (WebSocketServer.java:53)- 1
+2019-06-13 10:55:58,695 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 10:56:33,053 INFO (WebSocketServer.java:53)- 1
+2019-06-13 10:56:33,053 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 10:56:48,708 INFO (LoginController.java:143)- 收到login请求：参数
+2019-06-13 10:56:52,409 INFO (LoginController.java:143)- 收到login请求：参数
+2019-06-13 11:01:03,892 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:01:05,150 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:01:05,150 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:01:06,676 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:01:07,735 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:01:07,735 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:01:08,816 INFO (LoginController.java:143)- 收到login请求：参数
+2019-06-13 11:02:23,261 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:02:24,630 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:02:24,631 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:02:25,966 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:02:26,752 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:02:26,752 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:02:32,038 INFO (LoginController.java:143)- 收到login请求：参数
+2019-06-13 11:02:39,593 INFO (LoginController.java:143)- 收到login请求：参数
+2019-06-13 11:03:19,849 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:03:21,358 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 11:03:21,359 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:03:24,869 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:03:25,591 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 11:03:25,592 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:03:47,030 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:05:33,511 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 11:05:33,534 INFO (WebSocketServer.java:53)- null
+2019-06-13 11:05:33,534 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 11:06:10,266 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 11:06:12,253 INFO (WebSocketServer.java:53)- null
+2019-06-13 11:06:12,254 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为1
+2019-06-13 11:06:14,624 INFO (WebSocketServer.java:53)- null
+2019-06-13 11:06:14,624 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:06:16,512 INFO (LoginController.java:143)- 收到login请求：参数
+2019-06-13 11:06:17,685 INFO (WebSocketServer.java:129)- 当前用户不在线
+2019-06-13 11:06:24,062 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:06:24,784 INFO (WebSocketServer.java:53)- null
+2019-06-13 11:06:24,785 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:06:27,532 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:06:28,249 INFO (WebSocketServer.java:53)- null
+2019-06-13 11:06:28,249 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:06:29,086 INFO (LoginController.java:143)- 收到login请求：参数
+2019-06-13 11:06:29,907 INFO (WebSocketServer.java:129)- 当前用户不在线
+2019-06-13 11:08:40,173 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:08:41,086 INFO (WebSocketServer.java:53)- null
+2019-06-13 11:08:41,087 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:08:42,832 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:08:43,775 INFO (WebSocketServer.java:53)- null
+2019-06-13 11:08:43,776 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:09:18,949 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:09:19,695 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 11:09:19,695 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:10:02,469 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:10:03,537 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 11:10:03,537 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:10:05,067 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:10:06,048 INFO (WebSocketServer.java:53)- undefined
+2019-06-13 11:10:06,049 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:11:09,422 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:11:09,465 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:11:09,466 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:11:11,782 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:11:11,817 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:11:11,817 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:11:25,696 INFO (LoginController.java:143)- 收到login请求：参数123
+2019-06-13 11:11:51,577 INFO (LoginController.java:143)- 收到login请求：参数456456
+2019-06-13 11:12:02,220 INFO (LoginController.java:143)- 收到login请求：参数123
+2019-06-13 11:12:16,597 INFO (LoginController.java:143)- 收到login请求：参数456456
+2019-06-13 11:12:41,886 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:12:41,921 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:12:41,921 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:12:44,413 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:12:44,442 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:12:44,443 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:12:47,185 INFO (LoginController.java:143)- 收到login请求：参数21312
+2019-06-13 11:12:52,830 INFO (LoginController.java:143)- 收到login请求：参数123123
+2019-06-13 11:12:55,756 INFO (LoginController.java:143)- 收到login请求：参数21312
+2019-06-13 11:13:01,308 INFO (LoginController.java:143)- 收到login请求：参数123123
+2019-06-13 11:13:19,202 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:13:19,225 WARN (AbstractHandlerExceptionResolver.java:189)- Resolved exception caused by handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2019-06-13 11:13:21,089 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:13:21,089 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:13:24,533 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:13:24,563 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:13:24,564 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:13:32,782 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:13:32,820 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:13:32,820 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:13:35,006 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:13:35,036 INFO (WebSocketServer.java:53)- 1
+2019-06-13 11:13:35,036 INFO (WebSocketServer.java:67)- 有新连接加入！当前在线人数为2
+2019-06-13 11:15:54,358 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为1
+2019-06-13 11:17:06,688 INFO (DefaultLifecycleProcessor.java:360)- Stopping beans in phase 2147483647
+2019-06-13 11:17:12,165 INFO (WebSocketServer.java:87)- 有一连接关闭！当前在线人数为0
+2019-06-13 11:17:12,330 INFO (StartupInfoLogger.java:48)- Starting StudySpringAppApplication on DESKTOP-0TOJ20R with PID 5364 (F:\MyWork\StudySpringApp\target\classes started by dell in F:\MyWork\StudySpringApp)
+2019-06-13 11:17:12,330 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-13 11:17:12,330 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-06-13 11:17:12,971 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e49606e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 11:17:12,974 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c2c20db9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 11:17:12,982 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e2a48ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 11:17:13,130 INFO (EmbeddedWebApplicationContext.java:287)- Root WebApplicationContext: initialization completed in 796 ms
+2019-06-13 11:17:13,424 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/hi],methods=[POST]}" onto public java.lang.String com.java.controller.LoginController.sayHi()
+2019-06-13 11:17:13,424 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/getUserInfo],methods=[POST]}" onto public com.java.util.ResponseData com.java.controller.LoginController.login()
+2019-06-13 11:17:13,424 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/wechatPublicPay],methods=[POST]}" onto public com.java.util.ResultMsg com.java.controller.LoginController.wechatPublicPay(com.java.entity.WechatPublicPayParam) throws java.lang.Exception
+2019-06-13 11:17:13,425 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/login],methods=[POST]}" onto public com.java.util.ResponseData com.java.controller.LoginController.Login(java.lang.String)
+2019-06-13 11:17:13,426 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-06-13 11:17:13,426 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-06-13 11:17:13,426 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-06-13 11:17:13,427 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-13 11:17:13,428 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-13 11:17:13,519 INFO (RequestMappingHandlerAdapter.java:557)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45e5b23b: startup date [Thu Jun 13 11:17:12 CST 2019]; root of context hierarchy
+2019-06-13 11:17:13,530 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 11:17:13,530 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 11:17:13,541 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 11:17:13,609 INFO (FreeMarkerConfigurer.java:127)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-06-13 11:17:13,722 INFO (ServerEndpointExporter.java:143)- Registering @ServerEndpoint class: class com.java.config.WebSocketServer
+2019-06-13 11:17:13,732 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 2147483647
+2019-06-13 11:17:13,830 INFO (StartupInfoLogger.java:57)- Started StudySpringAppApplication in 1.556 seconds (JVM running for 1832.99)
+2019-06-13 11:17:29,398 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-13 11:17:29,407 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2019-06-13 11:19:55,416 INFO (LoginController.java:114)- 进入数据库查询======================
+2019-06-13 11:19:55,661 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,account_id,real_name,id_card,nick,head,sex,birthday,nation,marriage,phone,bak_phone,illness,diagnostic_content,qq_number,email,create_time,login_end_date,province_code,province_name,city_code,city_name,district_code,district_name,address,status,qrcode FROM subscribe_health_user WHERE id = ? 
+2019-06-13 11:19:55,671 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18(Long)
+2019-06-13 11:19:55,713 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-13 11:19:55,716 INFO (LoginController.java:119)- 存入Redis中》》》》》》》》》》》》》》》
+2019-06-13 11:22:00,741 INFO (DefaultLifecycleProcessor.java:360)- Stopping beans in phase 2147483647
+2019-06-13 11:22:04,268 INFO (StartupInfoLogger.java:48)- Starting StudySpringAppApplication on DESKTOP-0TOJ20R with PID 5364 (F:\MyWork\StudySpringApp\target\classes started by dell in F:\MyWork\StudySpringApp)
+2019-06-13 11:22:04,269 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-13 11:22:04,269 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-06-13 11:22:04,613 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e49606e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 11:22:04,616 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c2c20db9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 11:22:04,624 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e2a48ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 11:22:04,763 INFO (EmbeddedWebApplicationContext.java:287)- Root WebApplicationContext: initialization completed in 491 ms
+2019-06-13 11:22:05,061 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/hi],methods=[POST]}" onto public java.lang.String com.java.controller.LoginController.sayHi()
+2019-06-13 11:22:05,061 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/getUserInfo],methods=[POST]}" onto public com.java.util.ResponseData com.java.controller.LoginController.login()
+2019-06-13 11:22:05,062 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/wechatPublicPay],methods=[POST]}" onto public com.java.util.ResultMsg com.java.controller.LoginController.wechatPublicPay(com.java.entity.WechatPublicPayParam) throws java.lang.Exception
+2019-06-13 11:22:05,062 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/login],methods=[POST]}" onto public com.java.util.ResponseData com.java.controller.LoginController.Login(java.lang.String)
+2019-06-13 11:22:05,063 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-06-13 11:22:05,063 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-06-13 11:22:05,064 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-06-13 11:22:05,065 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-13 11:22:05,065 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-13 11:22:05,151 INFO (RequestMappingHandlerAdapter.java:557)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@200aedb6: startup date [Thu Jun 13 11:22:04 CST 2019]; root of context hierarchy
+2019-06-13 11:22:05,161 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 11:22:05,161 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 11:22:05,172 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-13 11:22:05,234 INFO (FreeMarkerConfigurer.java:127)- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-06-13 11:22:05,344 INFO (ServerEndpointExporter.java:143)- Registering @ServerEndpoint class: class com.java.config.WebSocketServer
+2019-06-13 11:22:05,352 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 2147483647
+2019-06-13 11:22:05,444 INFO (StartupInfoLogger.java:57)- Started StudySpringAppApplication in 1.21 seconds (JVM running for 2124.603)
+2019-06-13 11:24:25,425 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-13 11:24:25,432 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2019-06-13 11:24:25,590 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:26:00,239 INFO (LoginController.java:114)- 进入数据库查询======================
+2019-06-13 11:26:00,347 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,account_id,real_name,id_card,nick,head,sex,birthday,nation,marriage,phone,bak_phone,illness,diagnostic_content,qq_number,email,create_time,login_end_date,province_code,province_name,city_code,city_name,district_code,district_name,address,status,qrcode FROM subscribe_health_user 
+2019-06-13 11:26:00,348 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-13 11:26:00,417 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2019-06-13 11:26:00,417 INFO (LoginController.java:120)- 存入Redis中》》》》》》》》》》》》》》》
+2019-06-13 11:32:37,040 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:34:31,467 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:38:28,042 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:38:34,878 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:40:47,533 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:41:58,693 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:43:14,633 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:43:32,660 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 11:43:42,828 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 13:29:02,767 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 13:29:03,947 INFO (LoginController.java:125)- 进入Redis查询》》》》》》》》》》》》》》》》》
+2019-06-13 13:30:43,046 INFO (DefaultLifecycleProcessor.java:360)- Stopping beans in phase 2147483647

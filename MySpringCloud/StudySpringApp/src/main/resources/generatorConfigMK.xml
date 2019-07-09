@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 指定数据库驱动包，地址按照你的项目目录修改 -->
+    
+  <!-- <classPathEntry location="C:\Users\Administrator\eclipse-workspace\mybatisGenerator\WebContent\WEB-INF\lib\mysql-connector-java-5.1.26-bin.jar" /> -->
+    <!-- 指定数据库链接参数 -->
+    	
+  <context id="MysplContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+  		<!-- <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
+		<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" /> -->
+  		<property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+  		<property name="javaFileEncoding" value="UTF-8"/>
+        <property name="useMapperCommentGenerator" value="false"/>
+  		<plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+  			<property name="mappers" value="com.java.util.MyMapper"/>
+  		</plugin>
+  		<!-- 是否开启注释false为开启 -->
+  		<commentGenerator type="com.java.util.MyCommentGenerator">
+           <!--  <property name="suppressAllComments" value="true"/> -->
+        </commentGenerator>
+  <!--其他数据库需要修改-->
+   <!--此处是数据库地址-->
+   <!--用户名和密码要修改-->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+        connectionURL="jdbc:mysql://211.149.184.96:3306/zhyy"
+        userId="root"  
+        password="tanjun1536">
+    </jdbcConnection>
+    <!-- 数据库类型与java类型转换 -->
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+
+    <!-- 指定实体类生成 -->
+    <javaModelGenerator targetPackage="com.java.entity" targetProject="src/main/java">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+    <!-- 指定SQL定义文件生成 -->
+  	 <sqlMapGenerator targetPackage="mapper"  targetProject="src/main/resources">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+	 <!-- 对于mybatis来说，即生成Mapper接口，注意，如果没有配置该元素，那么默认不会生成Mapper接口 
+        targetPackage/targetProject:同javaModelGenerator
+        type：选择怎么生成mapper接口（在MyBatis3/MyBatis3Simple下）：
+            1，ANNOTATEDMAPPER：会生成使用Mapper接口+Annotation的方式创建（SQL生成在annotation中），不会生成对应的XML；
+            2，MIXEDMAPPER：使用混合配置，会生成Mapper接口，并适当添加合适的Annotation，但是XML会生成在XML中；
+            3，XMLMAPPER：会生成Mapper接口，接口完全依赖XML；
+        注意，如果context是MyBatis3Simple：只支持ANNOTATEDMAPPER和XMLMAPPER
+    -->
+    <!-- 指定Mapper接口生成 -->
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.java.mapper"  targetProject="src/main/java">
+     <property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+
+    <!-- 将数据库中所有表 -->
+    <!--tableName是表名，domainObjectName是生成的实体类名-->
+<!--     <table tableName="subscribe_health_user" domainObjectName="UserEntity"  -->
+<!--         enableCountByExample="false" enableDeleteByExample="false" -->
+<!--         enableUpdateByExample="false" enableSelectByExample="false"> -->
+<!--     </table> -->
+    <table tableName="subscribe_health_packagetwo" domainObjectName="ExaminationPackages" 
+        enableCountByExample="false" enableDeleteByExample="false"
+        enableUpdateByExample="false" enableSelectByExample="false">
+    </table>
+  </context>
+</generatorConfiguration>

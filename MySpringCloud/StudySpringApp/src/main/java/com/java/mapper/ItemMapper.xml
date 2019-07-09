@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.mapper.ItemMapper">
+  <resultMap id="BaseResultMap" type="com.java.entity.Item">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="item_id" jdbcType="VARCHAR" property="itemId" />
+    <result column="item_desc" jdbcType="VARCHAR" property="itemDesc" />
+    <result column="describes" jdbcType="VARCHAR" property="describes" />
+    <result column="station_id" jdbcType="VARCHAR" property="stationId" />
+    <result column="item_price" jdbcType="DECIMAL" property="itemPrice" />
+    <result column="station_desc" jdbcType="VARCHAR" property="stationDesc" />
+    <result column="sex_id" jdbcType="VARCHAR" property="sexId" />
+    <result column="sex_desc" jdbcType="VARCHAR" property="sexDesc" />
+    <result column="status" jdbcType="SMALLINT" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, item_id, item_desc, describes, station_id, item_price, station_desc, sex_id, 
+    sex_desc, status, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from subscribe_health_item
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from subscribe_health_item
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.java.entity.Item">
+    insert into subscribe_health_item (id, item_id, item_desc, 
+      describes, station_id, item_price, 
+      station_desc, sex_id, sex_desc, 
+      status, create_time, update_time
+      )
+    values (#{id,jdbcType=BIGINT}, #{itemId,jdbcType=VARCHAR}, #{itemDesc,jdbcType=VARCHAR}, 
+      #{describes,jdbcType=VARCHAR}, #{stationId,jdbcType=VARCHAR}, #{itemPrice,jdbcType=DECIMAL}, 
+      #{stationDesc,jdbcType=VARCHAR}, #{sexId,jdbcType=VARCHAR}, #{sexDesc,jdbcType=VARCHAR}, 
+      #{status,jdbcType=SMALLINT}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.java.entity.Item">
+    insert into subscribe_health_item
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="itemId != null">
+        item_id,
+      </if>
+      <if test="itemDesc != null">
+        item_desc,
+      </if>
+      <if test="describes != null">
+        describes,
+      </if>
+      <if test="stationId != null">
+        station_id,
+      </if>
+      <if test="itemPrice != null">
+        item_price,
+      </if>
+      <if test="stationDesc != null">
+        station_desc,
+      </if>
+      <if test="sexId != null">
+        sex_id,
+      </if>
+      <if test="sexDesc != null">
+        sex_desc,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="itemId != null">
+        #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="itemDesc != null">
+        #{itemDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="describes != null">
+        #{describes,jdbcType=VARCHAR},
+      </if>
+      <if test="stationId != null">
+        #{stationId,jdbcType=VARCHAR},
+      </if>
+      <if test="itemPrice != null">
+        #{itemPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="stationDesc != null">
+        #{stationDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="sexId != null">
+        #{sexId,jdbcType=VARCHAR},
+      </if>
+      <if test="sexDesc != null">
+        #{sexDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=SMALLINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.java.entity.Item">
+    update subscribe_health_item
+    <set>
+      <if test="itemId != null">
+        item_id = #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="itemDesc != null">
+        item_desc = #{itemDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="describes != null">
+        describes = #{describes,jdbcType=VARCHAR},
+      </if>
+      <if test="stationId != null">
+        station_id = #{stationId,jdbcType=VARCHAR},
+      </if>
+      <if test="itemPrice != null">
+        item_price = #{itemPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="stationDesc != null">
+        station_desc = #{stationDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="sexId != null">
+        sex_id = #{sexId,jdbcType=VARCHAR},
+      </if>
+      <if test="sexDesc != null">
+        sex_desc = #{sexDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=SMALLINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.java.entity.Item">
+    update subscribe_health_item
+    set item_id = #{itemId,jdbcType=VARCHAR},
+      item_desc = #{itemDesc,jdbcType=VARCHAR},
+      describes = #{describes,jdbcType=VARCHAR},
+      station_id = #{stationId,jdbcType=VARCHAR},
+      item_price = #{itemPrice,jdbcType=DECIMAL},
+      station_desc = #{stationDesc,jdbcType=VARCHAR},
+      sex_id = #{sexId,jdbcType=VARCHAR},
+      sex_desc = #{sexDesc,jdbcType=VARCHAR},
+      status = #{status,jdbcType=SMALLINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

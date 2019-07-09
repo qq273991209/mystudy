@@ -1,0 +1,48 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/websokect.js"></script>
+<title>查询电话归属地</title>
+</head>
+<body>
+		<span id="userno">1</span>
+			手机号码:<input type="text" name="pre"/>
+			<br>号码归属地：<span id="context"></span><br>
+			查询所用毫秒数：<span id="context1"></span>毫秒<br>
+				<input type="button" value="查询" id="btn"/>
+				<img src="image/yonghuming.jpg"/>
+				<a href="login">URL测试</a>
+				
+</body>
+<script>
+	
+		$("#btn").click(function(){
+			$("#context").html("");
+			 $.ajax({
+				type : "get",
+// 				data:{"pre":$("input").eq(0).val()
+// 					},
+				url : "testTreeMenu",
+				dataType : "json",
+				async : false,
+				success : function(data) {
+					var str1 = "";
+					var str2 = "";
+					var menus = data.data.Menus;
+					 $.each(menus,function(i,menu){
+						 str1+=menu.id;
+						 str2+=menu.name;
+						 
+					});
+					
+					$("#context1").html(str1);
+					$("#context").html(str2);
+				}
+			}); 
+		})
+
+
+</script>
+</html>

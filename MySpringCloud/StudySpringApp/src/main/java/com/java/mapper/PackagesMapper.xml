@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.mapper.PackagesMapper">
+  <resultMap id="BaseResultMap" type="com.java.entity.Packages">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="package_desc" jdbcType="VARCHAR" property="packageDesc" />
+    <result column="package_amt" jdbcType="DECIMAL" property="packageAmt" />
+    <result column="ord_sets_id" jdbcType="VARCHAR" property="ordSetsId" />
+    <result column="level_desc" jdbcType="VARCHAR" property="levelDesc" />
+    <result column="level_id" jdbcType="VARCHAR" property="levelId" />
+    <result column="gi_flag" jdbcType="VARCHAR" property="giFlag" />
+    <result column="sex_desc" jdbcType="VARCHAR" property="sexDesc" />
+    <result column="ord_sets_type" jdbcType="VARCHAR" property="ordSetsType" />
+    <result column="loc_id" jdbcType="VARCHAR" property="locId" />
+    <result column="loc_desc" jdbcType="VARCHAR" property="locDesc" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, package_desc, package_amt, ord_sets_id, level_desc, level_id, gi_flag, sex_desc, 
+    ord_sets_type, loc_id, loc_desc, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from subscribe_health_package
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from subscribe_health_package
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.java.entity.Packages">
+    insert into subscribe_health_package (id, package_desc, package_amt, 
+      ord_sets_id, level_desc, level_id, 
+      gi_flag, sex_desc, ord_sets_type, 
+      loc_id, loc_desc, create_time, 
+      update_time)
+    values (#{id,jdbcType=BIGINT}, #{packageDesc,jdbcType=VARCHAR}, #{packageAmt,jdbcType=DECIMAL}, 
+      #{ordSetsId,jdbcType=VARCHAR}, #{levelDesc,jdbcType=VARCHAR}, #{levelId,jdbcType=VARCHAR}, 
+      #{giFlag,jdbcType=VARCHAR}, #{sexDesc,jdbcType=VARCHAR}, #{ordSetsType,jdbcType=VARCHAR}, 
+      #{locId,jdbcType=VARCHAR}, #{locDesc,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.java.entity.Packages">
+    insert into subscribe_health_package
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="packageDesc != null">
+        package_desc,
+      </if>
+      <if test="packageAmt != null">
+        package_amt,
+      </if>
+      <if test="ordSetsId != null">
+        ord_sets_id,
+      </if>
+      <if test="levelDesc != null">
+        level_desc,
+      </if>
+      <if test="levelId != null">
+        level_id,
+      </if>
+      <if test="giFlag != null">
+        gi_flag,
+      </if>
+      <if test="sexDesc != null">
+        sex_desc,
+      </if>
+      <if test="ordSetsType != null">
+        ord_sets_type,
+      </if>
+      <if test="locId != null">
+        loc_id,
+      </if>
+      <if test="locDesc != null">
+        loc_desc,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="packageDesc != null">
+        #{packageDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="packageAmt != null">
+        #{packageAmt,jdbcType=DECIMAL},
+      </if>
+      <if test="ordSetsId != null">
+        #{ordSetsId,jdbcType=VARCHAR},
+      </if>
+      <if test="levelDesc != null">
+        #{levelDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="levelId != null">
+        #{levelId,jdbcType=VARCHAR},
+      </if>
+      <if test="giFlag != null">
+        #{giFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="sexDesc != null">
+        #{sexDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="ordSetsType != null">
+        #{ordSetsType,jdbcType=VARCHAR},
+      </if>
+      <if test="locId != null">
+        #{locId,jdbcType=VARCHAR},
+      </if>
+      <if test="locDesc != null">
+        #{locDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.java.entity.Packages">
+    update subscribe_health_package
+    <set>
+      <if test="packageDesc != null">
+        package_desc = #{packageDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="packageAmt != null">
+        package_amt = #{packageAmt,jdbcType=DECIMAL},
+      </if>
+      <if test="ordSetsId != null">
+        ord_sets_id = #{ordSetsId,jdbcType=VARCHAR},
+      </if>
+      <if test="levelDesc != null">
+        level_desc = #{levelDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="levelId != null">
+        level_id = #{levelId,jdbcType=VARCHAR},
+      </if>
+      <if test="giFlag != null">
+        gi_flag = #{giFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="sexDesc != null">
+        sex_desc = #{sexDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="ordSetsType != null">
+        ord_sets_type = #{ordSetsType,jdbcType=VARCHAR},
+      </if>
+      <if test="locId != null">
+        loc_id = #{locId,jdbcType=VARCHAR},
+      </if>
+      <if test="locDesc != null">
+        loc_desc = #{locDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.java.entity.Packages">
+    update subscribe_health_package
+    set package_desc = #{packageDesc,jdbcType=VARCHAR},
+      package_amt = #{packageAmt,jdbcType=DECIMAL},
+      ord_sets_id = #{ordSetsId,jdbcType=VARCHAR},
+      level_desc = #{levelDesc,jdbcType=VARCHAR},
+      level_id = #{levelId,jdbcType=VARCHAR},
+      gi_flag = #{giFlag,jdbcType=VARCHAR},
+      sex_desc = #{sexDesc,jdbcType=VARCHAR},
+      ord_sets_type = #{ordSetsType,jdbcType=VARCHAR},
+      loc_id = #{locId,jdbcType=VARCHAR},
+      loc_desc = #{locDesc,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

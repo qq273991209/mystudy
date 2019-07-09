@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property name="LOG_HOME" value="user-log" /> 
+	<!-- %m输出的信息,%p日志级别,%t线程名,%d日期,%c类的全名,,,, -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d %p (%file:%line\)- %m%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	
+	<!-- 按照每天生成日志文件 -->
+	<appender name="wechatAuth" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
+            <!-- 按天回滚 daily -->  
+            <fileNamePattern>${LOG_HOME}/%d{yyyy-MM-dd}.log
+            </fileNamePattern>  
+            <!-- 日志最大的历史 180天 -->  
+            <maxHistory>180</maxHistory>  
+        </rollingPolicy>  
+        <!--日志文件最大的大小 -->
+        <triggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>5MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder>
+			<pattern>
+				%d %p (%file:%line\)- %m%n
+			</pattern>
+			<!-- 此处设置字符集 -->
+			<charset>UTF-8</charset>
+		</encoder>
+    </appender>  
+     
+    
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+	<logger name="com.java" level="DEBUG">
+		<appender-ref ref="wechatAuth" />
+	</logger>
+	<logger name="org.springframework.core" level="info" ><appender-ref ref="wechatAuth" /></logger>
+    <logger name="org.springframework.beans" level="info" ><appender-ref ref="wechatAuth" /></logger>
+    <logger name="org.springframework.context" level="info" ><appender-ref ref="wechatAuth" /></logger>
+    <logger name="org.springframework.web" level="info" ><appender-ref ref="wechatAuth" /></logger>
+    <logger name="java.lang.*" level="info" ><appender-ref ref="wechatAuth" /></logger>
+</configuration>

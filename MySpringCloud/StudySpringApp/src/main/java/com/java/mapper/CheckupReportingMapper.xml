@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.mapper.CheckupReportingMapper">
+  <resultMap id="BaseResultMap" type="com.java.entity.CheckupReporting">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="adm_id" jdbcType="BIGINT" property="admId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sex" jdbcType="SMALLINT" property="sex" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="exam_date" jdbcType="DATE" property="examDate" />
+    <result column="company" jdbcType="VARCHAR" property="company" />
+    <result column="report_status" jdbcType="VARCHAR" property="reportStatus" />
+    <result column="pe_status" jdbcType="VARCHAR" property="peStatus" />
+    <result column="pre_date" jdbcType="DATE" property="preDate" />
+    <result column="exam_summary" jdbcType="VARCHAR" property="examSummary" />
+    <result column="summary_doctor" jdbcType="VARCHAR" property="summaryDoctor" />
+    <result column="summary_date" jdbcType="DATE" property="summaryDate" />
+    <result column="audit_doctor" jdbcType="VARCHAR" property="auditDoctor" />
+    <result column="audit_date" jdbcType="DATE" property="auditDate" />
+    <result column="ill_explain" jdbcType="VARCHAR" property="illExplain" />
+    <result column="ill_explainTitle" jdbcType="VARCHAR" property="illExplaintitle" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, adm_id, user_id, name, sex, age, exam_date, company, report_status, pe_status, 
+    pre_date, exam_summary, summary_doctor, summary_date, audit_doctor, audit_date, ill_explain, 
+    ill_explainTitle
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from checkup_reporting
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from checkup_reporting
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.java.entity.CheckupReporting">
+    insert into checkup_reporting (id, adm_id, user_id, 
+      name, sex, age, exam_date, 
+      company, report_status, pe_status, 
+      pre_date, exam_summary, summary_doctor, 
+      summary_date, audit_doctor, audit_date, 
+      ill_explain, ill_explainTitle)
+    values (#{id,jdbcType=BIGINT}, #{admId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, 
+      #{name,jdbcType=VARCHAR}, #{sex,jdbcType=SMALLINT}, #{age,jdbcType=INTEGER}, #{examDate,jdbcType=DATE}, 
+      #{company,jdbcType=VARCHAR}, #{reportStatus,jdbcType=VARCHAR}, #{peStatus,jdbcType=VARCHAR}, 
+      #{preDate,jdbcType=DATE}, #{examSummary,jdbcType=VARCHAR}, #{summaryDoctor,jdbcType=VARCHAR}, 
+      #{summaryDate,jdbcType=DATE}, #{auditDoctor,jdbcType=VARCHAR}, #{auditDate,jdbcType=DATE}, 
+      #{illExplain,jdbcType=VARCHAR}, #{illExplaintitle,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.java.entity.CheckupReporting">
+    insert into checkup_reporting
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="admId != null">
+        adm_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="examDate != null">
+        exam_date,
+      </if>
+      <if test="company != null">
+        company,
+      </if>
+      <if test="reportStatus != null">
+        report_status,
+      </if>
+      <if test="peStatus != null">
+        pe_status,
+      </if>
+      <if test="preDate != null">
+        pre_date,
+      </if>
+      <if test="examSummary != null">
+        exam_summary,
+      </if>
+      <if test="summaryDoctor != null">
+        summary_doctor,
+      </if>
+      <if test="summaryDate != null">
+        summary_date,
+      </if>
+      <if test="auditDoctor != null">
+        audit_doctor,
+      </if>
+      <if test="auditDate != null">
+        audit_date,
+      </if>
+      <if test="illExplain != null">
+        ill_explain,
+      </if>
+      <if test="illExplaintitle != null">
+        ill_explainTitle,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="admId != null">
+        #{admId,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=SMALLINT},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="examDate != null">
+        #{examDate,jdbcType=DATE},
+      </if>
+      <if test="company != null">
+        #{company,jdbcType=VARCHAR},
+      </if>
+      <if test="reportStatus != null">
+        #{reportStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="peStatus != null">
+        #{peStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="preDate != null">
+        #{preDate,jdbcType=DATE},
+      </if>
+      <if test="examSummary != null">
+        #{examSummary,jdbcType=VARCHAR},
+      </if>
+      <if test="summaryDoctor != null">
+        #{summaryDoctor,jdbcType=VARCHAR},
+      </if>
+      <if test="summaryDate != null">
+        #{summaryDate,jdbcType=DATE},
+      </if>
+      <if test="auditDoctor != null">
+        #{auditDoctor,jdbcType=VARCHAR},
+      </if>
+      <if test="auditDate != null">
+        #{auditDate,jdbcType=DATE},
+      </if>
+      <if test="illExplain != null">
+        #{illExplain,jdbcType=VARCHAR},
+      </if>
+      <if test="illExplaintitle != null">
+        #{illExplaintitle,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.java.entity.CheckupReporting">
+    update checkup_reporting
+    <set>
+      <if test="admId != null">
+        adm_id = #{admId,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=SMALLINT},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="examDate != null">
+        exam_date = #{examDate,jdbcType=DATE},
+      </if>
+      <if test="company != null">
+        company = #{company,jdbcType=VARCHAR},
+      </if>
+      <if test="reportStatus != null">
+        report_status = #{reportStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="peStatus != null">
+        pe_status = #{peStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="preDate != null">
+        pre_date = #{preDate,jdbcType=DATE},
+      </if>
+      <if test="examSummary != null">
+        exam_summary = #{examSummary,jdbcType=VARCHAR},
+      </if>
+      <if test="summaryDoctor != null">
+        summary_doctor = #{summaryDoctor,jdbcType=VARCHAR},
+      </if>
+      <if test="summaryDate != null">
+        summary_date = #{summaryDate,jdbcType=DATE},
+      </if>
+      <if test="auditDoctor != null">
+        audit_doctor = #{auditDoctor,jdbcType=VARCHAR},
+      </if>
+      <if test="auditDate != null">
+        audit_date = #{auditDate,jdbcType=DATE},
+      </if>
+      <if test="illExplain != null">
+        ill_explain = #{illExplain,jdbcType=VARCHAR},
+      </if>
+      <if test="illExplaintitle != null">
+        ill_explainTitle = #{illExplaintitle,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.java.entity.CheckupReporting">
+    update checkup_reporting
+    set adm_id = #{admId,jdbcType=BIGINT},
+      user_id = #{userId,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=SMALLINT},
+      age = #{age,jdbcType=INTEGER},
+      exam_date = #{examDate,jdbcType=DATE},
+      company = #{company,jdbcType=VARCHAR},
+      report_status = #{reportStatus,jdbcType=VARCHAR},
+      pe_status = #{peStatus,jdbcType=VARCHAR},
+      pre_date = #{preDate,jdbcType=DATE},
+      exam_summary = #{examSummary,jdbcType=VARCHAR},
+      summary_doctor = #{summaryDoctor,jdbcType=VARCHAR},
+      summary_date = #{summaryDate,jdbcType=DATE},
+      audit_doctor = #{auditDoctor,jdbcType=VARCHAR},
+      audit_date = #{auditDate,jdbcType=DATE},
+      ill_explain = #{illExplain,jdbcType=VARCHAR},
+      ill_explainTitle = #{illExplaintitle,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,110 @@
+2019-07-05 15:08:39,939 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a861740: startup date [Fri Jul 05 15:08:39 CST 2019]; root of context hierarchy
+2019-07-05 15:08:40,109 INFO (AutowiredAnnotationBeanPostProcessor.java:155)- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-05 15:08:40,139 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2ed8706] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:08:41,617 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-07-05 15:08:42,916 INFO (AutowiredAnnotationBeanPostProcessor.java:155)- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-05 15:08:42,986 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8b6b4908] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:08:43,116 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6d38409] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:08:43,236 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2ed8706] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:08:43,996 INFO (EmbeddedWebApplicationContext.java:287)- Root WebApplicationContext: initialization completed in 2359 ms
+2019-07-05 15:08:45,133 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/getUser]}" onto public com.java.util.ResponseData com.java.controller.LoginController.login()
+2019-07-05 15:08:45,140 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-05 15:08:45,140 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-05 15:08:45,140 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-05 15:08:45,140 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-05 15:08:45,140 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-05 15:08:48,634 INFO (RequestMappingHandlerAdapter.java:557)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64528325: startup date [Fri Jul 05 15:08:41 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7a861740
+2019-07-05 15:08:48,684 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-05 15:08:48,684 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-05 15:08:48,724 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-05 15:08:49,499 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 0
+2019-07-05 15:08:51,125 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 2147483647
+2019-07-05 15:08:51,528 INFO (StartupInfoLogger.java:57)- Started SrpingEurekaClietApplication in 13.112 seconds (JVM running for 13.642)
+2019-07-05 15:08:51,528 INFO (SrpingEurekaClietApplication.java:24)- 客户端一启动完成
+2019-07-05 15:09:34,227 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-05 15:09:34,243 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2019-07-05 15:09:49,522 INFO (MyLogAspect.java:101)- =======================通知开始=======================
+2019-07-05 15:09:49,524 INFO (MyLogAspect.java:108)- 方法描述:测试方法
+2019-07-05 15:09:49,524 INFO (MyLogAspect.java:109)- 请求方法:com.java.controller.LoginController.login()
+2019-07-05 15:09:49,524 INFO (MyLogAspect.java:110)- 请求参数:
+2019-07-05 15:09:49,524 INFO (MyLogAspect.java:111)- 请求IP:0:0:0:0:0:0:0:1
+2019-07-05 15:09:49,524 INFO (MyLogAspect.java:112)- =======================通知结束=======================
+2019-07-05 15:09:50,207 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM subscribe_health_user 
+2019-07-05 15:09:50,225 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-05 15:09:50,244 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-05 15:09:50,251 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,account_id,real_name,id_card,nick,head,sex,birthday,nation,marriage,phone,bak_phone,illness,diagnostic_content,qq_number,email,create_time,login_end_date,province_code,province_name,city_code,city_name,district_code,district_name,address,status,qrcode FROM subscribe_health_user LIMIT ? 
+2019-07-05 15:09:50,251 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2019-07-05 15:09:50,263 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-07-05 15:12:24,057 INFO (MyLogAspect.java:101)- =======================通知开始=======================
+2019-07-05 15:12:24,058 INFO (MyLogAspect.java:108)- 方法描述:测试方法
+2019-07-05 15:12:24,058 INFO (MyLogAspect.java:109)- 请求方法:com.java.controller.LoginController.login()
+2019-07-05 15:12:24,058 INFO (MyLogAspect.java:110)- 请求参数:
+2019-07-05 15:12:24,058 INFO (MyLogAspect.java:111)- 请求IP:0:0:0:0:0:0:0:1
+2019-07-05 15:12:24,059 INFO (MyLogAspect.java:112)- =======================通知结束=======================
+2019-07-05 15:12:24,060 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM subscribe_health_user 
+2019-07-05 15:12:24,060 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-05 15:12:24,070 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-05 15:12:24,070 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,account_id,real_name,id_card,nick,head,sex,birthday,nation,marriage,phone,bak_phone,illness,diagnostic_content,qq_number,email,create_time,login_end_date,province_code,province_name,city_code,city_name,district_code,district_name,address,status,qrcode FROM subscribe_health_user LIMIT ? 
+2019-07-05 15:12:24,071 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2019-07-05 15:12:24,085 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-07-05 15:17:38,760 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@106b51ed: startup date [Fri Jul 05 15:17:38 CST 2019]; root of context hierarchy
+2019-07-05 15:17:38,954 INFO (AutowiredAnnotationBeanPostProcessor.java:155)- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-05 15:17:38,984 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e810034e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:17:40,472 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-07-05 15:17:41,760 INFO (AutowiredAnnotationBeanPostProcessor.java:155)- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-05 15:17:41,820 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$708dc550] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:17:41,900 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cbf60051] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:17:42,020 INFO (PostProcessorRegistrationDelegate.java:327)- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e810034e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-05 15:17:42,760 INFO (EmbeddedWebApplicationContext.java:287)- Root WebApplicationContext: initialization completed in 2268 ms
+2019-07-05 15:17:44,085 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/getUser]}" onto public com.java.util.ResponseData com.java.controller.LoginController.login()
+2019-07-05 15:17:44,096 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-07-05 15:17:44,096 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-07-05 15:17:44,096 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-07-05 15:17:44,096 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-05 15:17:44,096 INFO (AbstractHandlerMethodMapping.java:544)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-05 15:17:47,843 INFO (RequestMappingHandlerAdapter.java:557)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cd2fa3: startup date [Fri Jul 05 15:17:40 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@106b51ed
+2019-07-05 15:17:47,923 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-05 15:17:47,923 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-05 15:17:47,960 INFO (AbstractUrlHandlerMapping.java:364)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-05 15:17:48,783 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 0
+2019-07-05 15:17:49,969 INFO (DefaultLifecycleProcessor.java:345)- Starting beans in phase 2147483647
+2019-07-05 15:17:50,345 INFO (StartupInfoLogger.java:57)- Started SrpingEurekaClietApplication in 13.096 seconds (JVM running for 13.604)
+2019-07-05 15:17:50,345 INFO (SrpingEurekaClietApplication.java:24)- 客户端一启动完成
+2019-07-05 15:18:33,210 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-05 15:18:33,240 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-07-05 15:21:38,971 INFO (MyLogAspect.java:101)- =======================通知开始=======================
+2019-07-05 15:21:38,973 INFO (MyLogAspect.java:108)- 方法描述:测试方法
+2019-07-05 15:21:38,973 INFO (MyLogAspect.java:109)- 请求方法:com.java.controller.LoginController.login()
+2019-07-05 15:21:38,973 INFO (MyLogAspect.java:110)- 请求参数:
+2019-07-05 15:21:38,973 INFO (MyLogAspect.java:111)- 请求IP:127.0.0.1
+2019-07-05 15:21:38,973 INFO (MyLogAspect.java:112)- =======================通知结束=======================
+2019-07-05 15:21:39,477 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM subscribe_health_user 
+2019-07-05 15:21:39,504 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-05 15:21:39,527 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-05 15:21:39,534 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,account_id,real_name,id_card,nick,head,sex,birthday,nation,marriage,phone,bak_phone,illness,diagnostic_content,qq_number,email,create_time,login_end_date,province_code,province_name,city_code,city_name,district_code,district_name,address,status,qrcode FROM subscribe_health_user LIMIT ? 
+2019-07-05 15:21:39,534 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2019-07-05 15:21:39,609 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-07-05 15:21:47,071 INFO (MyLogAspect.java:101)- =======================通知开始=======================
+2019-07-05 15:21:47,072 INFO (MyLogAspect.java:108)- 方法描述:测试方法
+2019-07-05 15:21:47,072 INFO (MyLogAspect.java:109)- 请求方法:com.java.controller.LoginController.login()
+2019-07-05 15:21:47,072 INFO (MyLogAspect.java:110)- 请求参数:
+2019-07-05 15:21:47,072 INFO (MyLogAspect.java:111)- 请求IP:127.0.0.1
+2019-07-05 15:21:47,072 INFO (MyLogAspect.java:112)- =======================通知结束=======================
+2019-07-05 15:21:47,073 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM subscribe_health_user 
+2019-07-05 15:21:47,074 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-05 15:21:47,082 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-05 15:21:47,083 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,account_id,real_name,id_card,nick,head,sex,birthday,nation,marriage,phone,bak_phone,illness,diagnostic_content,qq_number,email,create_time,login_end_date,province_code,province_name,city_code,city_name,district_code,district_name,address,status,qrcode FROM subscribe_health_user LIMIT ? 
+2019-07-05 15:21:47,083 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2019-07-05 15:21:47,153 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-07-05 15:21:52,812 INFO (MyLogAspect.java:101)- =======================通知开始=======================
+2019-07-05 15:21:52,812 INFO (MyLogAspect.java:108)- 方法描述:测试方法
+2019-07-05 15:21:52,812 INFO (MyLogAspect.java:109)- 请求方法:com.java.controller.LoginController.login()
+2019-07-05 15:21:52,813 INFO (MyLogAspect.java:110)- 请求参数:
+2019-07-05 15:21:52,813 INFO (MyLogAspect.java:111)- 请求IP:127.0.0.1
+2019-07-05 15:21:52,813 INFO (MyLogAspect.java:112)- =======================通知结束=======================
+2019-07-05 15:21:52,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM subscribe_health_user 
+2019-07-05 15:21:52,816 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-07-05 15:21:52,829 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-07-05 15:21:52,831 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT id,account_id,real_name,id_card,nick,head,sex,birthday,nation,marriage,phone,bak_phone,illness,diagnostic_content,qq_number,email,create_time,login_end_date,province_code,province_name,city_code,city_name,district_code,district_name,address,status,qrcode FROM subscribe_health_user LIMIT ? 
+2019-07-05 15:21:52,832 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2019-07-05 15:21:52,843 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3

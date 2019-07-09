@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.mapper.UserEntityMapper">
+  <resultMap id="BaseResultMap" type="com.java.entity.UserEntity">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="id_card" jdbcType="VARCHAR" property="idCard" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="head" jdbcType="VARCHAR" property="head" />
+    <result column="sex" jdbcType="SMALLINT" property="sex" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="nation" jdbcType="VARCHAR" property="nation" />
+    <result column="marriage" jdbcType="VARCHAR" property="marriage" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="bak_phone" jdbcType="VARCHAR" property="bakPhone" />
+    <result column="illness" jdbcType="VARCHAR" property="illness" />
+    <result column="diagnostic_content" jdbcType="VARCHAR" property="diagnosticContent" />
+    <result column="qq_number" jdbcType="VARCHAR" property="qqNumber" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="login_end_date" jdbcType="TIMESTAMP" property="loginEndDate" />
+    <result column="province_code" jdbcType="VARCHAR" property="provinceCode" />
+    <result column="province_name" jdbcType="VARCHAR" property="provinceName" />
+    <result column="city_code" jdbcType="VARCHAR" property="cityCode" />
+    <result column="city_name" jdbcType="VARCHAR" property="cityName" />
+    <result column="district_code" jdbcType="VARCHAR" property="districtCode" />
+    <result column="district_name" jdbcType="VARCHAR" property="districtName" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="status" jdbcType="SMALLINT" property="status" />
+    <result column="qrcode" jdbcType="VARCHAR" property="qrcode" />
+  </resultMap>
+    <insert id="insertUser" parameterType="com.java.entity.UserEntity" >
+    <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+        SELECT LAST_INSERT_ID() AS id
+    </selectKey>
+    insert into subscribe_health_user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="accountId != null" >
+        account_id,
+      </if>
+      <if test="realName != null" >
+        real_name,
+      </if>
+      <if test="idCard != null" >
+        id_card,
+      </if>
+      <if test="nick != null" >
+        nick,
+      </if>
+      <if test="head != null" >
+        head,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="birthday != null" >
+        birthday,
+      </if>
+      <if test="nation != null" >
+        nation,
+      </if>
+      <if test="marriage != null" >
+        marriage,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="bakPhone != null" >
+        bak_phone,
+      </if>
+      <if test="illness != null" >
+        illness,
+      </if>
+      <if test="diagnosticContent != null" >
+        diagnostic_content,
+      </if>
+      <if test="qqNumber != null" >
+        qq_number,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="loginEndDate != null" >
+        login_end_date,
+      </if>
+<!--       <if test="provinceCode != null" > -->
+<!--         province_code, -->
+<!--       </if> -->
+<!--       <if test="provinceName != null" > -->
+<!--         province_name, -->
+<!--       </if> -->
+<!--       <if test="cityCode != null" > -->
+<!--         city_code, -->
+<!--       </if> -->
+<!--       <if test="cityName != null" > -->
+<!--         city_name, -->
+<!--       </if> -->
+<!--       <if test="districtCode != null" > -->
+<!--         district_code, -->
+<!--       </if> -->
+<!--       <if test="districtName != null" > -->
+<!--         district_name, -->
+<!--       </if> -->
+      <if test="address != null" >
+        address,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="qrcode != null" >
+        qrcode,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="accountId != null" >
+        #{accountId,jdbcType=BIGINT},
+      </if>
+      <if test="realName != null" >
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="idCard != null" >
+        #{idCard,jdbcType=VARCHAR},
+      </if>
+      <if test="nick != null" >
+        #{nick,jdbcType=VARCHAR},
+      </if>
+      <if test="head != null" >
+        #{head,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=SMALLINT},
+      </if>
+      <if test="birthday != null" >
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="nation != null" >
+        #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="marriage != null" >
+        #{marriage,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="bakPhone != null" >
+        #{bakPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="illness != null" >
+        #{illness,jdbcType=VARCHAR},
+      </if>
+      <if test="diagnosticContent != null" >
+        #{diagnosticContent,jdbcType=VARCHAR},
+      </if>
+      <if test="qqNumber != null" >
+        #{qqNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginEndDate != null" >
+        #{loginEndDate,jdbcType=TIMESTAMP},
+      </if>
+<!--       <if test="provinceCode != null" > -->
+<!--         #{provinceCode,jdbcType=VARCHAR}, -->
+<!--       </if> -->
+<!--       <if test="provinceName != null" > -->
+<!--         #{provinceName,jdbcType=VARCHAR}, -->
+<!--       </if> -->
+<!--       <if test="cityCode != null" > -->
+<!--         #{cityCode,jdbcType=VARCHAR}, -->
+<!--       </if> -->
+<!--       <if test="cityName != null" > -->
+<!--         #{cityName,jdbcType=VARCHAR}, -->
+<!--       </if> -->
+<!--       <if test="districtCode != null" > -->
+<!--         #{districtCode,jdbcType=VARCHAR}, -->
+<!--       </if> -->
+<!--       <if test="districtName != null" > -->
+<!--         #{districtName,jdbcType=VARCHAR}, -->
+<!--       </if> -->
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=SMALLINT},
+      </if>
+      <if test="qrcode != null" >
+        #{qrcode,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

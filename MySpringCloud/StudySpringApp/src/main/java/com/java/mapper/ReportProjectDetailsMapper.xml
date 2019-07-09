@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.mapper.ReportProjectDetailsMapper">
+  <resultMap id="BaseResultMap" type="com.java.entity.ReportProjectDetails">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="adm_id" jdbcType="BIGINT" property="admId" />
+    <result column="total" jdbcType="INTEGER" property="total" />
+    <result column="item_desc" jdbcType="VARCHAR" property="itemDesc" />
+    <result column="item_id" jdbcType="VARCHAR" property="itemId" />
+    <result column="report_format" jdbcType="VARCHAR" property="reportFormat" />
+    <result column="doctor_name" jdbcType="VARCHAR" property="doctorName" />
+    <result column="exam_date" jdbcType="DATE" property="examDate" />
+    <result column="examination_itemDetail" jdbcType="VARCHAR" property="examinationItemdetail" />
+  </resultMap>
+  <insert id="insert" parameterType="com.java.entity.ReportProjectDetails">
+    insert into report_project_details (id, user_id, adm_id, 
+      total, item_desc, item_id, 
+      report_format, doctor_name, exam_date, 
+      examination_itemDetail)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{admId,jdbcType=BIGINT}, 
+      #{total,jdbcType=INTEGER}, #{itemDesc,jdbcType=VARCHAR}, #{itemId,jdbcType=VARCHAR}, 
+      #{reportFormat,jdbcType=VARCHAR}, #{doctorName,jdbcType=VARCHAR}, #{examDate,jdbcType=DATE}, 
+      #{examinationItemdetail,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.java.entity.ReportProjectDetails">
+    insert into report_project_details
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="admId != null">
+        adm_id,
+      </if>
+      <if test="total != null">
+        total,
+      </if>
+      <if test="itemDesc != null">
+        item_desc,
+      </if>
+      <if test="itemId != null">
+        item_id,
+      </if>
+      <if test="reportFormat != null">
+        report_format,
+      </if>
+      <if test="doctorName != null">
+        doctor_name,
+      </if>
+      <if test="examDate != null">
+        exam_date,
+      </if>
+      <if test="examinationItemdetail != null">
+        examination_itemDetail,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="admId != null">
+        #{admId,jdbcType=BIGINT},
+      </if>
+      <if test="total != null">
+        #{total,jdbcType=INTEGER},
+      </if>
+      <if test="itemDesc != null">
+        #{itemDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="itemId != null">
+        #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="reportFormat != null">
+        #{reportFormat,jdbcType=VARCHAR},
+      </if>
+      <if test="doctorName != null">
+        #{doctorName,jdbcType=VARCHAR},
+      </if>
+      <if test="examDate != null">
+        #{examDate,jdbcType=DATE},
+      </if>
+      <if test="examinationItemdetail != null">
+        #{examinationItemdetail,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>
